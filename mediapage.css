@@ -1,0 +1,63 @@
+@media screen and (max-width: 600px) {
+  ul.topnav,
+  ul.topnav li {
+    float: none;
+    display: block;
+    position: relative;
+  }
+  .buttonloggin {
+    float: none;
+    display: block;
+    margin: 0 auto; /* Center the login button */
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .about-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .about-info p {
+    margin: 1rem 2rem;
+  }
+
+  .about-info button {
+    margin: 1rem 2rem;
+    width: 10rem;
+  }
+
+  .team {
+    margin: 0 1rem;
+  }
+}

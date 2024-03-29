@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contentALLpages.css" />
+    <link rel="stylesheet" href="mediapage.css" />
+    <link rel="stylesheet" href="pageCA1.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <ul class="topnav">
+      <li><a href="home.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="gamepic.html">Game Pictures</a></li>
+
+      <button
+        class="buttonloggin"
+        onclick="document.getElementById('log').style.display='block'"
+        style="width: auto"
+      >
+        Login
+      </button>
+    </ul>
+
+    <div id="log" class="modal">
+      <form
+        class="modal-content transition"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgbox">
+          <span
+            onclick="document.getElementById('log').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img
+            class="imgprofile"
+            src="https://img.freepik.com/vetores-premium/coelho-gamer-kawaii_640621-62.jpg?w=740"
+            alt="Avatar"
+            class="img.avatar"
+          />
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button class="buttonloggin" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="box" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('log').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- info content -->
+    <section class="about">
+      <h1>About Us</h1>
+      <p style="font-weight: bold">ALGOMON RABBIT GAME</p>
+      <div class="about-info">
+        <div class="about-img">
+          <img
+            src="https://img.freepik.com/vetores-premium/coelho-gamer-kawaii_640621-62.jpg?w=740"
+          />
+        </div>
+        <div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque
+            similique exercitationem ex quas aperiam vero, iure id voluptatem
+            quos error molestias natus consequatur corporis laborum, facilis et
+            dolorem est?
+          </p>
+          <button class="ReadMore">Read More...</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h1>Meet Our Team</h1>
+      <div class="team-cards">
+        <!-- Cards here -->
+        <!-- Card 1 -->
+
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://img.freepik.com/vetores-premium/esport-estilo-logotipo-design-coelho-vetor-ilustracao_854757-477.jpg?w=740"
+              style="width: 100%"
+            />
+          </div>
+          <div class="card-info">
+            <h2 class="card-name">Assistent</h2>
+
+            <p class="card-email">RABBIT@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://img.freepik.com/vetores-gratis/coelho-bonito-segurando-arma-pistola-cartoon-vector-icon-ilustracao-conceito-de-icone-de-arma-animal-isolado_138676-6861.jpg?w=740&t=st=1711638307~exp=1711638907~hmac=f650715b9e9003b1beb0b5f9b1b84304f5b7522ce03abad6519f82ec42f4469a"
+              style="width: 100%"
+              alt="User 2"
+            />
+          </div>
+          <div class="card-info">
+            <h2 class="card-name">Co-Founde</h2>
+            <p class="card-email">rabbit@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://img.freepik.com/vetores-gratis/cute-sheep-gaming-cartoon-vector-icone-ilustracao-conceito-de-icone-de-tecnologia-animal-isolado-plano_138676-6846.jpg?w=740&t=st=1711638334~exp=1711638934~hmac=155c53d319cbc68c525f0e492eb846cd6269c9924a7545058a3f1c2aa3c4ec22"
+              style="width: 100%"
+            />
+          </div>
+          <div class="card-info">
+            <h2 class="card-name">maneger</h2>
+
+            <p class="card-email">rabbit@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Slideshow container -->
+
+    <!--     
+    <footer>
+      This is the footer section. You can add your footer content here.
+    </footer> -->
+    <script src="page.js"></script>
+  </body>
+</html>

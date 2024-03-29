@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contentALLpages.css" />
+    <link rel="stylesheet" href="mediapage.css" />
+    <link rel="stylesheet" href="pageCA1.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <ul class="topnav">
+      <li><a class="active" href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gamepic.html">Game Pictures</a></li>
+      <button
+        class="buttonloggin"
+        onclick="document.getElementById('log').style.display='block'"
+        style="width: auto"
+      >
+        Login
+      </button>
+    </ul>
+
+    <div id="log" class="modal">
+      <form
+        class="modal-content transition"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgbox">
+          <span
+            onclick="document.getElementById('log').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img
+            class="imgprofile"
+            src="https://img.freepik.com/vetores-premium/coelho-gamer-kawaii_640621-62.jpg?w=740"
+            alt="Avatar"
+            class="img.avatar"
+          />
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button class="buttonloggin" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="box" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('log').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Image -->
+    <div class="about-img2">
+      <img
+        class="homeimage2"
+        src="https://img.freepik.com/vetores-premium/coelho-gamer-kawaii_640621-62.jpg?w=740"
+      />
+    </div>
+
+    <!-- Fullscreen button -->
+    <button class="openimg" id="enterFullscreen">CLICK TO PLAY</button>
+
+    <!-- <footer>
+        This is the footer section. You can add your footer content here.
+    </footer> -->
+    <script src="page.js"></script>
+  </body>
+</html>
